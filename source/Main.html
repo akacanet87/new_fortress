@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!-- <script language="javascript" type="text/javascript" src="../js/init.js"></script>
+<script language="javascript" type="text/javascript" src="../js/fnSystem.js"></script>
+<script language="javascript" type="text/javascript" src="../js/fnMap.js"></script>
+<script language="javascript" type="text/javascript" src="../js/fnTank.js"></script>
+<script language="javascript" type="text/javascript" src="../js/fnBullet.js"></script>
+<script language="javascript" type="text/javascript" src="../js/maps.js"></script>
+<script language="javascript" type="text/javascript" src="../js/tanks.js"></script> -->
+<script src="../js/init.js"></script>
+<script src="../js/fnSystem.js"></script>
+<script src="../js/fnBullet.js"></script>
+<script src="../js/fnTank.js"></script>
+<script src="../js/fnMap.js"></script>
+<script src="../js/tanks.js"></script>
+<script src="../js/maps.js"></script>
+<script>
+var wrapper; 						//	전체 창
+var mask;								//	맵에서 보여질 부분만 오픈된 마스크
+var disWin;							//	맵 이외의 창을 보여줄 div
+//var map;								//	맵
+var gameMap;
+
+var key;
+
+//var tank;
+var gameTank;
+var tankSide;
+
+//var bullet;
+var shotBullet;
+var angleCount=0;
+var shotPower;
+var bulletDeg;
+
+var trigger=true;
+
+var blockArr1 = new Array();
+var blockArr2 = new Array();
+var blockArr3 = new Array();
+var blockArr4 = new Array();
+var blockArr5 = new Array();
+var blockArr = new Array( blockArr1, blockArr2, blockArr3, blockArr4, blockArr5 );
+
+var cannon;
+var theCastleMap;
+
+var playWin;							//	게임 플레이 윈도우
+
+var winWidth;
+var winHeight;
+
+var mapWidth = 3600;			//	맵의 넓이
+var mapHeight = 2400;			//	맵의 높이
+
+var mapVelX = 0;					//	맵이 x	좌표 상에서 한번에 움직이는 거리
+var mapVelY = 0;					//	맵이 y 좌표 상에서 한번에 움직이는 거리
+var mapPosX = 0;					//	맵의 x 좌표
+var mapPosY = 0;					//	맵의 y 좌표
+
+var gravity=0.09;							//	중력의 역할을 하는 상수
+
+function playWin(divName) {
+
+	this.divName = divName;
+
+}
+	
+</script>
+
+</head>
+<body>
+
+	<div id="wrapper">
+
+		<div id="mask"></div>
+
+		<div id="disWin"></div>
+
+	</div>
+
+</body>
+</html>

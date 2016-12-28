@@ -1,0 +1,27 @@
+body{
+	
+	margin : 0px;
+	
+}
+
+#wrapper{
+	
+	margin : auto;
+	margin-top : 20px;
+	
+}
+
+#disWin{
+	
+	position : absolute;
+	margin : auto;
+	
+}
+
+#mask{
+	
+	margin : auto;
+	position : absolute;
+	overflow : hidden;
+	
+}
